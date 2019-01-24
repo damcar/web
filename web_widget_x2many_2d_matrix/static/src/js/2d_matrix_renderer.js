@@ -213,9 +213,9 @@ odoo.define('web_widget_x2many_2d_matrix.X2Many2dMatrixRenderer', function (requ
             if (value.type === 'record') {
                 // We have a related record
                 value = value.data.display_name;
+                // Get 1st column filled w/ Y label
+                $td.text(value);
             }
-            // Get 1st column filled w/ Y label
-            $td.text(value);
             return $td;
         },
 
